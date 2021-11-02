@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	src:url("SVN-Birth Of A Hero.ttf");
+	font-family:SVN-Birth Of A Hero;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    background-color: black;
+    overflow: hidden;
+}
+
+.block {
+    position: relative;
+    width: 580px;
+    height: 460px;
+    margin: 10px 300px 20px 80px;
+}
+
+h1 {
+    position: absolute;
+    font-family:SVN-Birth Of A Hero;
+    font-weight: lighter;
+    font-size: 64px;
+	text-shadow: 0 0 10px #00EEFF;
+	0 0 30px #00EEFF;
+	0 0 80px #00EEFF;
+}
+
+.block-1 {
+    background: url("143479430_1974821735991178_7115941696372413228_n.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-2 {
+    background: url("TU1_4409.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-3 {
+    background: url("DSC09642.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-4 {
+    background: url("126899350_1914090728730946_530213540359269543_n.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.block-5 {
+    background: url("61495542_1397793333694024_434576731018362880_n.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.block-1 h1,
+.block-3 h1,
+.block-5 h1 {
+    bottom: 0;
+    right: -60px;
+}
+
+.block-2 h1,
+.block-4 h1 {
+    right: -60px;
+}

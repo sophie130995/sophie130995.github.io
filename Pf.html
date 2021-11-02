@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PF</title>
+        <link href="pf.css" rel="stylesheet" type="text/css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="smooth-scroll-wrapper">
+            <div class="content">
+                <div class="container">
+                    <h1 class="text">the projects</h1>
+                    <div class="img">
+                        <img src="58755007_1372727986200559_3112307725598457856_n.jpeg" alt="" />
+                    </div>
+                    <p class="text">
+						
+                    </p>
+                </div>
+                <div class="container">
+                    <h1 class="text">Outdoor Photography</h1>
+                    <div class="img">
+                        <img src="IMG_9642.JPEG" alt="" />
+						<img src="IMG_9645.JPEG" alt="" />
+                    </div>
+                    <p class="text">
+                        
+                    </p>
+                </div>
+
+                <div class="container">
+                    <h1 class="text">Product Photography</h1>
+                    <div class="img">
+                        <img src="chival21.jpg" alt="" />
+                    </div>
+                    <p class="text">
+                        
+                    </p>
+                </div>
+                <div class="container">
+                    <h1 class="text">Logo design</h1>
+                    <div class="img">
+						<br>
+                        <img src="Un1.png" alt="" />
+                    </div>
+                    <p class="text">
+                      
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            const body = document.body,
+                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                height = scrollWrap.getBoundingClientRect().height - 1,
+                speed = 0.04;
+
+            var offset = 0;
+
+            body.style.height = Math.floor(height) + "px";
+
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                scrollWrap.style.transform = scroll;
+
+                callScroll = requestAnimationFrame(smoothScroll);
+            }
+
+            smoothScroll();
+
+            $(function () {
+                var elements = $(".text, .img").toArray();
+                $(window).scroll(function () {
+                    elements.forEach(function (item) {
+                        if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                            $(item).addClass("reveal");
+                        }
+                    });
+                });
+                elements.forEach(function (item) {
+                    if ($(this).scrollTop() >= $(item).offset().top - 400) {
+                        $(item).addClass("reveal");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

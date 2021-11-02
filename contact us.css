@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	src:url("SVN-Blue.ttf");
+	font-family:SVN-Blue;
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	color: #00EEFF;
+	font-family:SVN-Blue;
+	text-shadow: 0 0 10px #00EEFF;
+	0 0 30px #00EEFF;
+	0 0 80px #00EEFF;
+}
+.container {
+	background-image:url("tumblr_nnix6u7ig21rnbafjo1_400.gif");
+	background-position: center;
+	background-size:750px;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+	padding-top: 20px;
+  
+}
+.container .contact {
+	background-color:none;
+	width: 580px;
+	height: 650px;
+	text-align:center;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	font-size: 25px;
+	letter-spacing: 4px;
+}
+
+.container .contact input {
+	width: 400px;
+	padding: 12px;
+	margin-top: 30px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.container .contact input:hover { 
+	box-shadow: 4px -4px 15px 0px #00EEFF;, -9px 6px 11px 0px #00EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 4px -4px 15px 0px #00EEFF, -9px 6px 11px 0px #00EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.container .contact button {
+	width: 170px;
+	margin-top: 30px;
+	margin-left: 310px; 
+	padding: 10px;
+	border-radius: 30px;
+	font-size: 20px;
+	background-image:url("5cdd52305a465e60c2d2baf2ebd7689b.gif");
+	background-position: center;
+	box-shadow: 4px -4px 15px 0px #00EEFF, -9px 6px 11px 0px #00EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 4px -4px 15px 0px #00EEFF, -9px 6px 11px 0px #00EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.container .contact button:hover {
+	box-shadow: 5px 0px 0px 0px #00EEFF, 0px 5px 0px 0px #00EEFF, -5px 0px 0px 0px #00EEFF, 0px 0px 0px 3px #00EEFF, 3px 5px 5px 5px rgba(0,0,0,0); 
+	box-shadow: 5px 0px 0px 0px #00EEFF, 0px 5px 0px 0px #00EEFF, -5px 0px 0px 0px #00EEFF, 0px 0px 0px 3px #00EEFF, 3px 5px 5px 5px rgba(0,0,0,0);
+}
+
+

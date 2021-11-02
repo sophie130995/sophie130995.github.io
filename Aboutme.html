@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Parallax Effect | Codegrid</title>
+      <link href="abme.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+</head>
+<body>
+
+      <div class="whitespace"></div>
+
+      <div class="container">
+            <div class="row">
+                  <div class="col-lg-4 img one">
+                        <img src="image/DSC09621.jpg" class="ione" alt="">
+                  </div>
+
+                  <div class="col-lg-3 txt text-1">
+                        <h1>since 1995</h1>
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-lg-8 txt text-2">
+                        <h1>I am from Binh Duong<br>I have a passion for design</h1>
+                  </div>
+
+                  <div class="col-lg-4 img two">
+                        <img src="image/DSC00045.JPG" class="itwo" alt="">
+                  </div>
+            </div>
+
+            <div class="container-fluid">
+                  <div class="row">
+                        <div class="col-lg-12 img three">
+                              <img src="image/metqa.png" class="ithree" alt="">
+                        </div>
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-lg-4 img four">
+                        <img src="image/DSC09798.jpg" class="ifour" alt="">
+                  </div>
+
+                  <div class="col-lg-3 txt text-3">
+                        <h1>love fashion, sports and singing.
+</h1>
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-lg-8 txt text-4">
+                        <h1>I love those who can smile in trouble… <br> — Leonardo da Vinci -</h1>
+                  </div>
+
+                  <div class="col-lg-4 img five">
+                        <img src="image/DSC09999.jpg" class="ifive" alt="">
+                  </div>
+            </div>
+
+            <div class="container-fluid">
+                  <div class="row">
+                        <div class="col-lg-12 img six">
+                              <img src="image/88.png" class="isix" alt="">
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <script type="text/javascript">
+
+      var image = document.getElementsByClassName('ione');
+      new simpleParallax(image, {
+            scale: 1.8
+      });
+
+      var image = document.getElementsByClassName('itwo');
+      new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'left'
+      });
+
+      var image = document.getElementsByClassName('ithree');
+      new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'right'
+      });
+
+      var image = document.getElementsByClassName('ifour');
+      new simpleParallax(image, {
+            scale: 1.6,
+      });
+
+      var image = document.getElementsByClassName('ifive');
+      new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'right'
+      });
+
+      var image = document.getElementsByClassName('isix');
+      new simpleParallax(image, {
+            scale: 1.6,
+            orientation: 'left'
+      });
+
+      </script>
+</body>
+</html>
