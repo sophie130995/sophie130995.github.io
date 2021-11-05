@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 @font-face {
-	src:url("SVN-Birth Of A Hero.ttf");
-	font-family:SVN-Birth Of A Hero;
+	src:url("SVN-Blue.ttf");
+	font-family:SVN-Blue;
 }
 html,
 body {
@@ -24,7 +24,7 @@ body {
 
 h1 {
     position: absolute;
-    font-family:SVN-Birth Of A Hero;
+    font-family:SVN-Blue;
     font-weight: lighter;
     font-size: 64px;
 	text-shadow: 0 0 10px #00EEFF;

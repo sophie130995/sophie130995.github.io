@@ -47,10 +47,17 @@ p {
 
 .text {
     color: transparent;
+	color: #fff;
     display: inline-block;
     position: relative;
     overflow: hidden;
     transition: 0.8s;
+}
+.text1{
+	text-align: center;
+	font-size: 40px;
+	
+
 }
 .text.reveal {
     color: #fff;
@@ -151,4 +158,27 @@ p {
     p {
         font-size: 16px;
     }
+}
+.footer {
+	background-color:#000000;
+	height: 80px;
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	padding-top:10px;
+
+}
+.footer a{
+	padding-right: 50px;
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+.footer a:hover{
+	text-shadow: 0 0 5px #A1D8FF, 0 0 15px #5FB8FF, 2px 2px 2px rgba(206,89,55,0);
+	font-size: 52px;
 }
